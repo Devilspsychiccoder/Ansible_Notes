@@ -1,2 +1,2 @@
-This Respo is for Installation Guide
+This Repo is for Installation Guide
 
