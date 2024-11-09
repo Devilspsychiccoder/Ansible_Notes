@@ -5,4 +5,5 @@
 sudo dnf update -y
 sudo dnf install python3-pip -y
 pip install ansible
+sudo yum install ansible - y
 sudo dnf update -y
