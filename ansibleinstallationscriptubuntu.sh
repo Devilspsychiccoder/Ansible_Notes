@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#The installation is for ubuntu server
+#The Ansible installation is for ubuntu server
 
 sudo apt install python3
 sudo apt update -y
