@@ -18,6 +18,10 @@ ansible_user=ec2-user     >> User
 ansible_ssh_private_key_file=/home/ubuntu/master.pem > Private key location
 ansible_python_interpreter=/usr/bin/python3 > The Intrepreter you want to use 
 
+to check the entire inventory list use the below command 
+
+ansible-inventory --list
+
 Ansible Adhoc commands vs modules
 
 ad hoc commands are great for tasks you repeat rarely.
@@ -31,3 +35,7 @@ Ansible modules are units of code that can control system resources or execute s
 eg. -m is used for modules
 ansible all -m ping -u ubuntu
 
+Commmands 
+
+ansible prod -a "free -h"
+ansible prod -a "sudo yum update -y"
