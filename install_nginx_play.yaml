@@ -1,0 +1,19 @@
+-
+
+  name: Install Nginx and Sart and Serve Static Website
+  hosts: production
+  become: yes
+  tasks:
+    - name: Install Nginx
+      yum:    # Package manager
+        name: nginx # Application Name 
+        state: latest # The version you want to Install
+    - name: Start Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+    - name: Deploy Website
+      copy:
+        src: index.html
+        dest: /var/www/html
