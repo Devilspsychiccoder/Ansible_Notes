@@ -6,10 +6,10 @@
     - name: Show Date
       command: date
 
-    - name: Show Date again
-      command: date
+    - name: Show uptime
+      command: uptime
 
 
-#This is a Playbooks and the host should match the inventory file mentioned there 
+# This is a Playbooks and the host should match the inventory file mentioned there 
 # to run the playbook use the command anssible-playbook <Playbook Name > eg : ansible-playbook playbook.yaml
-# To see the output in the CLI use -v option eg: ansible-playbook -v playbook.yaml 
+# To see the output in the CLI use -v (Verbose) option eg: ansible-playbook -v playbook.yaml 
