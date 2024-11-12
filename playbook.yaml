@@ -1,5 +1,15 @@
-name: Dates Playbook
-hosts: servers 
-tasks: 
-  - name: Show Date
-    command: Date 
+-
+
+  name: Dates Playbook
+  hosts: production
+  tasks:
+    - name: Show Date
+      command: date
+
+    - name: Show Date again
+      command: date
+
+
+#This is a Playbooks and the host should match the inventory file mentioned there 
+# to run the playbook use the command anssible-playbook <Playbook Name > eg : ansible-playbook playbook.yaml
+# To see the output in the CLI use -v option eg: ansible-playbook -v playbook.yaml 
