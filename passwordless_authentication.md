@@ -2,7 +2,7 @@ Procure Ec2 Instances for Ansible Master preferibly ubuntu then from Loacl machi
 
 Using Public Key
 
-ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
+ssh-copy-id -f "-o IdentityFile <<PATH TO PEM FILE>>" ubuntu@<<INSTANCE-PUBLIC-IP>>
 
 ssh-copy-id: This is the command used to copy your public key to a remote machine.
 
