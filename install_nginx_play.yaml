@@ -17,3 +17,4 @@
       copy:
         src: index.html
         dest: /var/www/html
+        dest: /usr/share/nginx/html

@@ -41,3 +41,5 @@ Commmands
 
 ansible prod -a "free -h"
 ansible prod -a "sudo yum update -y"
+
+ansible -i inventory.ini -m shell -a "apt install openjdk" all 
